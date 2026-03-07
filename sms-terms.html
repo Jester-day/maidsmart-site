@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Terms & Conditions | MaidSmart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand: #0057FF;
+            --brand-light: #E8F0FF;
+            --brand-dark: #003DB3;
+            --text: #1a1a2e;
+            --text-secondary: #555570;
+            --bg: #FAFBFE;
+            --white: #FFFFFF;
+            --border: #E2E4EB;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            background: var(--brand);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .card h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: var(--brand-light);
+            border-left: 3px solid var(--brand);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            color: var(--brand-dark);
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .consent-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 520px) {
+            .consent-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .consent-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .consent-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--brand-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .consent-icon svg {
+            width: 14px;
+            height: 14px;
+            color: var(--brand);
+        }
+
+        .consent-item-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .consent-item-text strong {
+            display: block;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .sample-msg {
+            background: #F4F5F7;
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-family: 'DM Sans', monospace;
+            font-size: 14px;
+            color: var(--text);
+            margin: 16px 0;
+            line-height: 1.6;
+            border: 1px solid var(--border);
+        }
+
+        .footer {
+            border-top: 1px solid var(--border);
+            padding-top: 32px;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--brand-light);
+            color: var(--brand-dark);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-inner">
+            <div class="logo-mark">M</div>
+            <div class="logo-text">MaidSmart</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <span class="badge">SMS Policy</span>
+        <h1>SMS Terms &amp; Conditions</h1>
+        <p class="subtitle">Last updated: March 2026</p>
+
+        <!-- Consent Overview -->
+        <div class="card">
+            <h2>Consent to Receive SMS Messages</h2>
+            <p>By using the MaidSmart platform, you consent to receive operational SMS messages from MaidSmart LLC related to facility management alerts and issue resolution.</p>
+
+            <div class="highlight-box">
+                <p>SMS consent is obtained when an authorized facility manager registers your phone number in the MaidSmart system, or when you scan a MaidSmart QR code and provide your phone number.</p>
+            </div>
+
+            <div class="consent-summary">
+                <div class="consent-item">
+                    <div class="consent-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="consent-item-text">
+                        <strong>Message Types</strong>
+                        Operational alerts about reported facility issues and resolution confirmations
+                    </div>
+                </div>
+                <div class="consent-item">
+                    <div class="consent-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="consent-item-text">
+                        <strong>Frequency</strong>
+                        Messages are event-driven, sent only when an issue is reported at your assigned facility
+                    </div>
+                </div>
+                <div class="consent-item">
+                    <div class="consent-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="consent-item-text">
+                        <strong>Costs</strong>
+                        Message and data rates may apply based on your mobile carrier plan
+                    </div>
+                </div>
+                <div class="consent-item">
+                    <div class="consent-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <div class="consent-item-text">
+                        <strong>No Marketing</strong>
+                        MaidSmart will never send promotional or marketing messages via SMS
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="card">
+            <h2>How MaidSmart SMS Works</h2>
+            <p>MaidSmart is a facility management platform. When a visitor at a facility scans a QR code and reports an issue (such as a restroom needing attention), the assigned EVS (Environmental Services) worker receives an SMS alert. The worker can reply to confirm the issue has been resolved.</p>
+
+            <p><strong>Example message:</strong></p>
+            <div class="sample-msg">
+                Feedback: Room 1011 was marked as clean up needed. Please reply with Y once it is completed.
+            </div>
+        </div>
+
+        <!-- Opt-Out -->
+        <div class="card">
+            <h2>How to Opt Out</h2>
+            <p>You can stop receiving SMS messages at any time by replying <strong>STOP</strong> to any MaidSmart text message. You will receive a one-time confirmation message and no further messages will be sent.</p>
+            <p>You may also contact your facility manager to have your number removed from the system, or email us at <strong>help@maidsmart.app</strong> to request removal.</p>
+        </div>
+
+        <!-- Help -->
+        <div class="card">
+            <h2>Need Help?</h2>
+            <p>For questions about MaidSmart SMS messaging, reply <strong>HELP</strong> to any message or contact us:</p>
+            <p><strong>Email:</strong> help@maidsmart.app<br>
+            <strong>Website:</strong> <a href="https://maidsmart.app" style="color: var(--brand); text-decoration: none;">maidsmart.app</a></p>
+        </div>
+
+        <!-- Privacy -->
+        <div class="card">
+            <h2>Privacy</h2>
+            <p>MaidSmart LLC respects your privacy. Phone numbers collected through the MaidSmart platform are used solely for sending operational facility management alerts. We do not sell, rent, or share your phone number with third parties for marketing purposes.</p>
+            <p>Your information is handled in accordance with our privacy practices. For questions, contact <strong>help@maidsmart.app</strong>.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 MaidSmart LLC. All rights reserved.</p>
+            <p style="margin-top: 8px;"><a href="https://maidsmart.app">maidsmart.app</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
